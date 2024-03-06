@@ -11,7 +11,7 @@ The provided VBA script, Multiple_year_stock_data, iterates through each workshe
 
 Multiple_year_stock_data: This is the main VBA script responsible for analyzing the stock data.
 README.md: This file provides an overview of the project.
-(Other files): Any additional files or resources used in the project.
+
 
 ## Instructions
 To use the Multiple_year_stock_data script:
