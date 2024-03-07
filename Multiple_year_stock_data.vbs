@@ -34,7 +34,7 @@ Sub Multiple_year_stock_data()
         ws.Range("K:K").NumberFormat = "0.00%"
         ws.Range("L1").Value = "TotalStockVolume"
         
-        ' Get the openPrice for the first row
+        ' Get the openPrice for the first Ticker
         openPrice = ws.Cells(2, 3).Value
         
         ' Loop through each row
@@ -60,13 +60,14 @@ Sub Multiple_year_stock_data()
                     
                     ' Write YearlyChange,PercentChange and TotalStockVolume to summary table
                     ws.Range("J" & Summary_Table_Row).Value = YearlyChange
+                    ' Apply conditional formatting on YearlyChange
                     If YearlyChange > 0 Then
                         ws.Range("J" & Summary_Table_Row).Interior.ColorIndex = 4 ' Green
                     Else
                         ws.Range("J" & Summary_Table_Row).Interior.ColorIndex = 3 ' Red
                     End If
                     ws.Range("K" & Summary_Table_Row).Value = PercentChange
-                    
+                     ' Apply conditional formatting on PercentChange
                     If PercentChange > 0 Then
                     ws.Range("K" & Summary_Table_Row).Interior.ColorIndex = 4
                     Else
