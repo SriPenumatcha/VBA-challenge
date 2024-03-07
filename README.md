@@ -13,6 +13,8 @@ Multiple_year_stock_data.vbs: This is the main VBA script responsible for analyz
 
 README.md: This file provides an overview of the project.
 
+VBA_Script_Results_Screenshots.docx: This file provides screenshots of the results obtained after running the VBA script on the Excel workbook.
+
 
 ## Instructions
 To use the Multiple_year_stock_data script:
